@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- CSS de bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" >
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="../css/personalizado/style.css" >
+    <!-- CSS Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+          <h1>CALCULADORA</h1>
+        </div>
+    </div>
+        <br>
+
+    <!-- Estructura de Calculadora -->
+    <div class="container">
+        <!-- Valores -->
+        <div class="row justify-content-center">
+            <div class="col-sm-4 " >
+                    <label>Número 1</label>
+                    <input style="text-align: right;" type="number" id="valor1" class="form-control"  placeholder="0" required>
+            </div>
+            <div class="col-sm-4 ">
+                    <label>Número 2</label>    
+                    <input style="text-align: right;" type="number" id="valor2" class="form-control" placeholder="0" required>
+            </div>
+        </div>
+    </div>
+    <br>
+    
+        <!-- Resultado de la Operación -->
+    <div class="container my-2">
+        <div class="row justify-content-center">
+          <div class="col-sm-4">
+                <label>Resultado</label>        
+                <swamp id="resultado" style="text-align: right;" type="number" class="form-control"  placeholder="0" aria-readonly="true" >  <br>
+                </swamp>     
+          </div>
+        </div>
+    </div>
+    <br>
+
+        <!-- Funciones Calculadora -->
+    <div class="container my-5">
+        <div class="row justify-content-center text-center">
+            <div class="col-sm-3">
+                <button type="button" onclick="calcula('+')" class="btn btn-outline-secondary">Sumar</button>
+                
+            </div>
+            <div class="col-sm-3">
+                <button type="button" onclick="calcula('-')" class="btn btn-outline-secondary">Restar</button>
+            </div>
+            <div class="col-sm-3">
+                <button type="button" onclick="calcula('*')" class="btn btn-outline-secondary">Multiplicar</button>
+            </div>
+            <div class="col-sm-3"> 
+                <button type="button" onclick="calcula('/')" class="btn btn-outline-secondary">Dividir</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS de Bootstrap -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Script Calculadora -->
+    <script src="../scripts/calculadora.js"></script>
+
+    
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Github -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://github.com/maggievillasenor"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-github"></i>
+            </a>
+            <!-- Linkedin -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://www.linkedin.com/in/margarita-villasenor/"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright || Maggie: <em>Calculadora con Funciones Básicas</em>
+        </div>
+        <!-- Copyright -->
+      </footer>
+</body>
+</html>
